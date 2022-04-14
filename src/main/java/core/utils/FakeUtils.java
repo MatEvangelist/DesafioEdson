@@ -7,9 +7,10 @@ import java.util.Locale;
 public class FakeUtils {
 
     private static final Faker faker = new Faker(new Locale("pt-br"));
+    private static final Faker faker2 = new Faker(new Locale("eng"));
 
     public static String gerarUserName() {
-        return faker.name().username();
+        return faker2.name().username();
     }
 
     public static String gerarEmail() {

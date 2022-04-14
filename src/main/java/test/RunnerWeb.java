@@ -10,9 +10,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         monochrome = true,
         plugin = {"pretty", "json:target/cucumber-report/cucumber.json"},
-        features = {"src/main/resources/features"},
-        glue = {"test/steps", "core"},
-        tags = "@CadastroValido")
+        features = {"src/main/resources/featuresWeb"},
+        glue = {"test/stepsWeb", "core"},
+        tags = "@CadastroValido"
+)
 
 public class RunnerWeb {
 

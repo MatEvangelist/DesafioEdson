@@ -1,6 +1,5 @@
 package core.utils.report;
 
-
 import com.rajatthareja.reportbuilder.ReportBuilder;
 
 import java.io.File;
@@ -10,18 +9,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Gerar report em HTML
- */
 public class Report {
 
     private static final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
     private static final DateFormat dateFormatFile = new SimpleDateFormat("ddMMyyyy");
     private static final Date date = new Date();
 
-    /**
-     * Gerar o report com o ReportBuilder
-     */
+    //Gerar o dashboard a partir do report json
     public static void gerarRelatorioReportBuilder() {
         ReportBuilder reportBuilder = new ReportBuilder();
 

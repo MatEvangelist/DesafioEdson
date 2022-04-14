@@ -28,6 +28,7 @@ public class BasePage {
         Random aleatorio = new Random();
         Select combo = new Select(elemento);
         DriverFactory.getWait().until(ExpectedConditions.visibilityOfAllElements(elemento));
+        esperar(5);
         combo.selectByIndex(aleatorio.nextInt(241));
     }
 

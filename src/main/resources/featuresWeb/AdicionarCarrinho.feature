@@ -1,6 +1,5 @@
 #language: pt
 #enconding: utf-8
-#author: Mathews Evangelista
 
 Funcionalidade: Adicionar Item no Carrinho
 

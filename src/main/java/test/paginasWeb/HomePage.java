@@ -12,7 +12,7 @@ public class HomePage extends BasePage {
     @FindBy(how = How.XPATH, using = "//h3[@class='roboto-regular center ng-scope']")
     private WebElement textoPaginaInicial;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='menuUserLink']")
+    @FindBy(how = How.ID, using = "menuUserLink")
     private WebElement botaoMenuUsuario;
 
     @FindBy(how = How.XPATH, using = "//*[text()='SIGN IN']")

@@ -2,7 +2,11 @@ package core.configWeb;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class DriverFactory {
 
@@ -17,7 +21,12 @@ public class DriverFactory {
     }
 
     public static void createDriver() {
-        if (driver == null) driver = new ChromeDriver();
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("profile.default_content_setting_values.notifications", 2);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized");
+        options.setExperimentalOption("prefs", prefs);
+        if (driver == null) driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, 40);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
