@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import java.util.HashMap;
 import java.util.Map;
 
-import static core.DriverFactory.getDriver;
+import static core.configWeb.DriverFactory.getDriver;
 
 
 public class ScenarioRepository {
