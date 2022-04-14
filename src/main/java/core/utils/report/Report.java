@@ -26,14 +26,10 @@ public class Report {
         ReportBuilder reportBuilder = new ReportBuilder();
 
         reportBuilder.setReportDirectory("target/");
-
         reportBuilder.setReportFileName(dateFormatFile.format(date));
-
-        reportBuilder.setReportTitle("Frame Web Selenium Bdd Mathews Evangelista");
+        reportBuilder.setReportTitle("Frame Web Selenium Bdd por Mathews Evangelista");
         reportBuilder.setReportColor("red");
-
         reportBuilder.enableVoiceControl();
-
         reportBuilder.setAdditionalInfo("Date", dateFormat.format(date));
 
         List<Object> cucumberJsonReports = new ArrayList<>();

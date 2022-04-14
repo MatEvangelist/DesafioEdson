@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "json:target/cucumber-report/cucumber.json"},
         features = {"src/main/resources/features"},
         glue = {"test/steps", "core"},
-        tags = "@CadastroValido")
+        tags = ""
+)
 
 public class Runner {
 
